@@ -12,9 +12,26 @@ function HelloWorld() {
 export default HelloWorld;
 
 function HeaderHelloWorld() {
-  return <h1>Hello World</h1>;
+  const text = "Hello World";
+  return (
+    <h1
+      // Style Inline
+      style={{
+        color: "red",
+        backgroundColor: "aqua",
+      }}
+    >
+      {text.toUpperCase()}
+    </h1>
+  );
 }
 
 function ParagraphHelloWorld() {
-  return <p>Selamat Belajar ReactJS dari Programmer Zaman Now</p>;
+  const text = "Selamat Belajar ReactJS dari Programmer Zaman Now";
+  // Style Melalui JS
+  const style = {
+    color: "blue",
+    backgroundColor: "yellow",
+  };
+  return <p style={style}> {text.toLowerCase()} </p>;
 }
