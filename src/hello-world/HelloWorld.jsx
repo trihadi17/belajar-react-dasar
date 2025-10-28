@@ -1,3 +1,6 @@
+// Import Css
+import "./HelloWorld.css";
+
 function HelloWorld() {
   return (
     // NOTED : Gunakan tag <> </> (fragment) atau tag <div></div> untuk diawal
@@ -16,15 +19,20 @@ export default HelloWorld;
 function HeaderHelloWorld({ text = "Ups, lupa kasih text" }) {
   // const text = "Hello World";
   return (
-    <h1
-      // Style Inline
-      style={{
-        color: "red",
-        backgroundColor: "aqua",
-      }}
-    >
-      {text.toUpperCase()}
-    </h1>
+    <>
+      <h1
+        // Style Inline
+        style={{
+          color: "red",
+          backgroundColor: "aqua",
+        }}
+      >
+        {text.toUpperCase()}
+      </h1>
+
+      {/* Penggunaan CSS */}
+      <p className="content">Style nya Import dari File CSS</p>
+    </>
   );
 }
 
