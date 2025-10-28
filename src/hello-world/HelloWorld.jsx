@@ -3,7 +3,8 @@ function HelloWorld() {
     // NOTED : Gunakan tag <> </> (fragment) atau tag <div></div> untuk diawal
     <>
       {/* Multiple Component */}
-      <HeaderHelloWorld />
+      <HeaderHelloWorld text="Hello World" />
+      {/* text="Hello World" -> Props (Mengirim data antar komponen) */}
       <ParagraphHelloWorld />
     </>
   );
@@ -11,8 +12,9 @@ function HelloWorld() {
 
 export default HelloWorld;
 
-function HeaderHelloWorld() {
-  const text = "Hello World";
+// {text = "blabla"} -> text adalah destructing props, sedangkan "blabla" merupakan default value ketika propsnya kosong atau tidak terisi
+function HeaderHelloWorld({ text = "Ups, lupa kasih text" }) {
+  // const text = "Hello World";
   return (
     <h1
       // Style Inline
