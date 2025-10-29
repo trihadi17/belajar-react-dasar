@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import HelloWorld from "./HelloWorld";
 import Container from "./Container";
 import AlertButton from "../button/AlertButton";
+import MyButton from "../button/MyButton";
 
 createRoot(document.getElementById("root")).render(
   // NOTED : STRICT MODE berfungsi untuk menampilkan semua komponen di root, ini mmebantu dalam mencari masalah saat development. Boleh tidak digunakan
@@ -11,6 +12,7 @@ createRoot(document.getElementById("root")).render(
     <Container>
       <HelloWorld />
       <AlertButton text="Click Me" message={"You click me"} />
+      <MyButton text="Smash me" onSmash={() => alert("You smash me")} />
     </Container>
   </StrictMode>
 );
