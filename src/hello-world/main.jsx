@@ -5,6 +5,7 @@ import Container from "./Container";
 import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
 import Toolbar from "../button/Toolbar";
+import SearchForm from "../form/SearchForm";
 
 createRoot(document.getElementById("root")).render(
   // NOTED : STRICT MODE berfungsi untuk menampilkan semua komponen di root, ini mmebantu dalam mencari masalah saat development. Boleh tidak digunakan
@@ -21,6 +22,8 @@ createRoot(document.getElementById("root")).render(
           alert("You click toolbar");
         }}
       />
+
+      <SearchForm />
     </Container>
   </StrictMode>
 );
