@@ -4,6 +4,7 @@ import HelloWorld from "./HelloWorld";
 import Container from "./Container";
 import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
+import Toolbar from "../button/Toolbar";
 
 createRoot(document.getElementById("root")).render(
   // NOTED : STRICT MODE berfungsi untuk menampilkan semua komponen di root, ini mmebantu dalam mencari masalah saat development. Boleh tidak digunakan
@@ -13,6 +14,13 @@ createRoot(document.getElementById("root")).render(
       <HelloWorld />
       <AlertButton text="Click Me" message={"You click me"} />
       <MyButton text="Smash me" onSmash={() => alert("You smash me")} />
+
+      <Toolbar
+        onClick={(e) => {
+          e.stopPropagation(); // ini mencegah triggger onClick lainnya, yang di click yang ditrigger
+          alert("You click toolbar");
+        }}
+      />
     </Container>
   </StrictMode>
 );
