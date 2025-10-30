@@ -14,7 +14,9 @@
 
 export default function AlertButton({ text, message }) {
   // Event Handler
-  function handleClick() {
+  function handleClick(e) {
+    // e -> event object (informasi mengenai event apa yang sedang dilakukan misal click dll)
+    console.log(e.type); // Event handler type "click"
     alert(message);
   }
 
