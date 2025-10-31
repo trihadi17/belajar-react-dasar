@@ -7,6 +7,7 @@ import MyButton from "../button/MyButton";
 import Toolbar from "../button/Toolbar";
 import SearchForm from "../form/SearchForm";
 import SayHelloForm from "../form/SayHelloForm";
+import Counter from "../form/Counter";
 
 createRoot(document.getElementById("root")).render(
   // NOTED : STRICT MODE berfungsi untuk menampilkan semua komponen di root, ini mmebantu dalam mencari masalah saat development. Boleh tidak digunakan
@@ -27,6 +28,8 @@ createRoot(document.getElementById("root")).render(
       <SearchForm />
 
       <SayHelloForm />
+
+      <Counter />
     </Container>
   </StrictMode>
 );
