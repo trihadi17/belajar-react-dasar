@@ -6,6 +6,7 @@ import { useState } from "react";
 // Apabila posisi Component berubah, misal hilang dari layar makan State nya akan dihapus dari React dan ketika muncul lagi, nilai nya akan diulang dari awal
 
 // NOTED : Jika posisi component dan jenis component nya sama, secara otomatis React akan mempertahankan State tersebut alias nilai nya sama, tidak sendiri sendiri lagi. Kecuali posisi nya berubah atau component nya berbeda
+// NOTED : Jika ingin posisi component nya sama dan jenis component nya sama, sangat direkomendasikan menggunakan "Key" pada component tersebut, itu dia akan membedakan component tersebut walaupun posisinya sama
 
 export default function Counter() {
   const [count, setCount] = useState(0);
