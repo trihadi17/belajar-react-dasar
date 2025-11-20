@@ -13,6 +13,7 @@ export default defineConfig({
         todolist: "todolist.html",
         contact: "contact.html",
         task: "task.html",
+        counter: "counter.html",
       },
     },
   },
