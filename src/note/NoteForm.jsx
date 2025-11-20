@@ -4,6 +4,8 @@
 // Reducer Fucntion adlaah kode dimana kita menyimpan logic kita
 // Reducer Function memiliki dua parameter. Yaitu State saat ini dan Action obejct
 
+// NOTED : BISA MENGGUNAKAN LIBRARY IMMER, dengan cara useImmerReducer()
+
 import React, { useReducer } from "react";
 
 const inisialData = {
