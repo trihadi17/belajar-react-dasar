@@ -54,3 +54,5 @@ export default function Task() {
     </div>
   );
 }
+
+// NOTED : JIKA INGIN TAU CARA SHARING STATE ANTAR COMPONENT, LIHAT DI SLIDE "SHARING STATE"
